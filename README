@@ -1,0 +1,51 @@
+nadav366
+
+itay.tayar guyk12123 yair.shemer
+
+=============================
+=      File description     =
+=============================
+part 1-
+    Storage.java- A class that is a simple storage object. Master class for two storage objects.
+    Locker.java- A class that is Locker, which is a kind of storage.
+    LongTermStorage.java-  class that is Long Term Storage, which is a kind of storage.
+
+    LockerTest.java- Test class for Locker class.
+    LongTermTest.java- Test class for LongTermTest class.
+    SpaceshipDepositoryTest.java- A class that ran the all tests of SpaceshipDepository software.
+
+part 2-
+    ComparByRating.java- An object that compares hotel objects, by star rating and then by name.
+    ComparByProximity.java- An object that compares hotel objects, by Proximity to given point and then by
+                            number of POI.
+
+    BoopingSite.java- A class that is a site comparing hotels according to different parameters
+    BoopingSiteTest.java- Test class for BoopingSite class.
+
+=============================
+=          Design           =
+=============================
+part 1-
+- Since I was required to create two classes that are storage, but with different characteristics,
+    and with different methods, I chose to create a storage class and the two classs would inherit from it.
+- I chose to store the data on HashMap, because it is a terrible metaphor, can be easily inserted and removed,
+    and it precisely links the rhyme, which is the name of the item, as the key and the
+    number of units in storage.
+- There is a certain double code between the two test classes that I did not know that they would use the
+    same class when writing the tests, so I had to check each one separately.
+
+part 2-
+- Since I had to sort the lists according to different definitions, I created comparison classes,
+    each of which has exactly the characteristics to compare.
+- In implementing the methods, I chose to insert the data in the beginning into ArrayList because
+    it is dynamic, can be easily added and sorted easily. Finally I had to convert it to Array to get it back.
+- With the getHotelsInCityByProximity method I did not need to re-categorize, because you can use
+    getHotelsByProximity and only take out the hotels in the appropriate city.
+
+=============================
+=  Implementation details   =
+=============================
+- Working on TDD was interesting, and although it was difficult to write the tests without
+    running them in the process, it helped the writing of the departments.
+- The choice to write a storage department and extends from it was good, and helped greatly
+ in the writing of Locker and long-term storage.
